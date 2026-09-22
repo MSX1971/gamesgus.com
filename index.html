@@ -1,52 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.gamesgus.com/">
-  <meta name="twitter:card" content="summary">
-  <title>GamesGus</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · GamesGus</title>
+<link rel="icon" href="data:,">
+<style>
+:root{
+  --ink:#1b1e2c; --muted:#5a5f73; --paper:#ffffff; --wash:#f2f4f9;
+  --blue:#2233a8; --red:#c8102e; --rule:#dde1ec;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ink:#e7e9f2; --muted:#a3a8bb; --paper:#12141d; --wash:#1a1d29;
+         --blue:#8c9bff; --red:#ff6b7f; --rule:#2c3040; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  font-size:1.0625rem;line-height:1.7}
+.wrap{max-width:40rem;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
+  gap:.75rem 1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule)}
+.mark{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-weight:800;
+  font-size:1.6rem;letter-spacing:-.02em;text-decoration:none;line-height:1}
+.mark .g{color:var(--blue)} .mark .s{color:var(--red)}
+nav.lang{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:.9rem;display:flex;flex-wrap:wrap;gap:.25rem 1rem}
+nav.lang a{color:var(--muted);text-decoration:none}
+nav.lang a[aria-current]{color:var(--ink);font-weight:600}
+h1{font-size:2.1rem;line-height:1.15;margin:2.25rem 0 .35rem;letter-spacing:-.01em}
+.date{color:var(--muted);margin:0 0 2rem;font-size:.95rem}
+h2{font-size:1.2rem;margin:2.4rem 0 .5rem;line-height:1.3}
+p{margin:0 0 1rem}
+ul{margin:0 0 1rem;padding-left:1.25rem} li{margin:.3rem 0}
+a{color:var(--blue);text-underline-offset:.18em;overflow-wrap:anywhere}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:2px}
+footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--rule);
+  color:var(--muted);font-size:.9rem}
+.card{background:var(--wash);padding:1.25rem 1.4rem;border-radius:6px;margin:1.5rem 0}
+.card p:last-child{margin:0}
+</style>
 </head>
 <body>
-
-<nav>
-  <a class="nav-logo" href="index.html">GAMESGUS</a>
-  <ul class="nav-links">
-    <li><a href="index.html" class="active">Main</a></li>
-    <li><a href="crazy-gumball-machine/index.html">Crazy Gumball Machine</a></li>
-    <li><a href="new-rue-eur/index.html">New Rue Eur</a></li>
-    <li><a href="privacy-policy/index.html">Privacy Policy</a></li>
-    <li><a href="privacy-policy-new-rue-eur/index.html">Privacy Policy New Rue Eur</a></li>
-    <li><a href="contact/index.html">Contact</a></li>
-  </ul>
-</nav>
-
-<section class="hero">
-  <p class="hero-eyebrow">Innovative mobile games</p>
-  <h1>GamesGus</h1>
-  <p>In GamesGus we want to make unique and innovative games. Influenced by our experience as 8-bit players, the challenge we face is to offer a variety of games that will surprise the current gamer.</p>
-  <p style="margin-top:1rem;">Our goal is to entertain and have fun in an authentic way, without dressing in a different way to the same game as always. We believe we have achieved it with New Rue Eur and with our new game Crazy Gumball Machine, and we hope to repeat it with the next releases.</p>
-</section>
-
-<div class="games-grid">
-  <a class="game-card" href="crazy-gumball-machine/index.html">
-    <h2>CRAZY GUMBALL MACHINE</h2>
-    <p>New game! Help David separate the gumballs into different flavors. With skill, good reflexes and quick calculations, make the series as long as possible to get the highest score!</p>
-  </a>
-  <a class="game-card" href="new-rue-eur/index.html">
-    <h2>NEW RUE EUR</h2>
-    <p>Play with Catalan, Spanish, French and Italian license plates in a single app. Travel through Europe and solve all the traffic jams in their streets!</p>
-  </a>
+<div class="wrap">
+<header>
+  <a class="mark" href=""><span class="g">Games</span><span class="s">Gus</span></a>
+  <nav class="lang"></nav>
+</header>
+<main>
+<h1>Independent mobile games</h1>
+<p>GamesGus makes puzzle games for iOS and Android.</p>
+<div class="card">
+<p><strong>SoliChess Demolition</strong></p>
+<p>A chess puzzle game where you can't retrace your steps. Coming soon to the App Store and Google Play.</p>
 </div>
+<h2>Support</h2>
+<p>If you have a question or found a problem in one of our games, write to <a href="mailto:gus@gamesgus.com">gus@gamesgus.com</a>. We usually reply within a few days.</p>
+<h2>Privacy</h2>
+<p>Read how our games handle your data in our <a href="privacy-policy/">Privacy Policy</a>.</p>
 
-<footer>
-  <p>© GamesGus · <a href="contact/index.html">Contact</a> · <a href="privacy-policy/index.html">Privacy Policy</a></p>
-</footer>
-
+</main>
+<footer>© 2026 GamesGus. <a href="mailto:gus@gamesgus.com">gus@gamesgus.com</a></footer>
+</div>
 </body>
 </html>
